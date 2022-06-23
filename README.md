@@ -1,17 +1,19 @@
 # ELC-REST
 Репозиторий для хранения файлов REST API для работы с базой данных ЭУК
 
-#### Сущность Student:
+### Сущность Student:
 
 - GET /students - получить список студентов
 - POST /students - добавить студента
 - GET /students/{id} - получить данные студента по ID
 - PATCH /students/{id} - обновить данные студента по его ID
 - DELETE /students/{id} - удалить данные студента по его ID
+#### Курсы
 - GET /students/{id}/status - получить прогресс студента по его курсам
 - POST /students/{id}/status - записать студента на курс
-- GET /students/{id}/status/{curse_id} - получить прогресс студента по определенному курсу
+- GET /students/{id}/status/{course_id} - получить прогресс студента по определенному курсу
 - DELETE /students/{id}/status/{course_id} - исключить студента из курса
+#### Тесты
 - GET /students/{id}/tests - получить результаты прохождения тестов студентом
 - POST /students/{id}/tests - записать студента на прохождение теста
 - GET /students/{id}/tests/{test_id} - просмотреть результаты студента по определенному тесту
@@ -19,27 +21,31 @@
 - POST /students/{id}/tests/{test_id}/answers - добавить ответ студента на вопрос
 - GET /students/{id}/tests/{test_id}/answers/{task_id} - просмотреть ответ студента на определенный вопрос
 
-#### Сущность Course:
+### Сущность Course:
 
 - GET /courses - получить список курсов
 - POST /courses - добавить курс
 - GET /courses/{id} - получить данные курса по ID
 - PATCH /courses/{id} - обновить данные курса по ID
 - DELETE /courses/{id} - удалить данные курса по ID
+#### Прогресс студентов
 - GET /courses/{id}/status - получить прогресс студентов по курсу
 - POST /courses/{id}/status - записать студента на курс
 - GET /courses/{id}/status/{student_id} - получить прогресс определенного студента по курсу
 - DELETE /courses/{id}/status/{student_id} - исключить определеного студента из курса
+#### Категории
 - GET /courses/{id}/categories - получить список категорий курса
 - POST /courses/{id}/categories - добавить категорию в курс
 - GET /courses/{id}/categories/{cat_id} - получить категорию по ID
 - PATCH /courses/{id}/categories/{cat_id} - обновить категорию по ID
 - DELETE /courses/{id}/categories/{cat_id} - удалить категорию по ID
+#### Материалы
 - GET /courses/{id}/categories/{cat_id}/materials - получить список материалов категории
 - POST /courses/{id}/categories/{cat_id}/materials - добавить данные материалов в категорию
 - GET /courses/{id}/categories/{cat_id}/materials/{mat_id} - получить данные материала категории по ID
 - PATCH /courses/{id}/categories/{cat_id}/materials/{mat_id} - обновить данные материала категории по ID
 - DELETE /courses/{id}/categories/{cat_id}/materials/{mat_id} - удалить данные материала из категории
+#### Тесты
 - GET /courses/{id}/categories/{cat_id}/tests - получить список тестов в категории
 - POST /courses/{id}/categories/{cat_id}/tests - добавить тест в категорию
 - GET /courses/{id}/categories/{cat_id}/tests/{test_id} - получить данные определенного теста
