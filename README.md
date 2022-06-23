@@ -21,7 +21,7 @@
 - POST /students/{id}/tests - записать студента на прохождение теста ({"test_id":"<ид.теста>"})
 - GET /students/{id}/tests/{test_id} - просмотреть результаты студента по определенному тесту
 - GET /students/{id}/tests/{test_id}/answers - просмотреть ответы студента на вопросы теста
-- POST /students/{id}/tests/{test_id}/answers - добавить ответ студента на вопрос ({"task_id":"<ид.вопроса>", "ans_chosen":"<номер.ответа>"})
+- PATCH /students/{id}/tests/{test_id}/answers - добавить ответ студента на вопрос ({"task_id":"<ид.вопроса>", "ans_chosen":"<номер.ответа>"})
 - GET /students/{id}/tests/{test_id}/answers/{task_id} - просмотреть ответ студента на определенный вопрос
 
 ## Сущность Course:
