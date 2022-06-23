@@ -1,7 +1,7 @@
 # ELC-REST
 Репозиторий для хранения файлов REST API для работы с базой данных ЭУК
 
-### Сущность Student:
+## Сущность Student:
 
 - GET /students - получить список студентов
 - POST /students - добавить студента
@@ -21,7 +21,7 @@
 - POST /students/{id}/tests/{test_id}/answers - добавить ответ студента на вопрос
 - GET /students/{id}/tests/{test_id}/answers/{task_id} - просмотреть ответ студента на определенный вопрос
 
-### Сущность Course:
+## Сущность Course:
 
 - GET /courses - получить список курсов
 - POST /courses - добавить курс
