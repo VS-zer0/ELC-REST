@@ -71,4 +71,4 @@
 - PATCH /courses/{id}/categories/{cat_id}/tests/{test_id}/results/{att_id} - обновить результат прохождения теста ({"tasks_completed":"<кол.правильных.ответов>"})
 
 ## ER-диаграмма базы данных
-![ER-диаграмма](https://cdn.discordapp.com/attachments/747540133728747700/989422854447726633/unknown.png)
+![ER-диаграмма](https://github.com/VS-zer0/ELC-REST/blob/main/ER%20%D0%B4%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0.png)
